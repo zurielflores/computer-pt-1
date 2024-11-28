@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            min-height: 100vh;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+            padding: 20px;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        [class*="col-"] {
+            flex: 1 1 calc(33.33% - 20px); 
+            min-width: 280px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .col:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #fcb045;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #f5f5f5;
+        }
+
+
+        @media only screen and (max-width: 767px) {
+            .col {
+                flex: 1 1 100%; 
+            }
+
+            .header {
+                font-size: 28px;
+            }
+        }
+
+
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            .col-s-1 { width: 8.33%; }
+            .col-s-2 { width: 16.66%; }
+            .col-s-3 { width: 25%; }
+            .col-s-4 { width: 33.33%; }
+            .col-s-5 { width: 41.66%; }
+            .col-s-6 { width: 50%; }
+            .col-s-7 { width: 58.33%; }
+            .col-s-8 { width: 66.66%; }
+            .col-s-9 { width: 75%; }
+            .col-s-10 { width: 83.33%; }
+            .col-s-11 { width: 91.66%; }
+            .col-s-12 { width: 100%; }
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+            .col-1 { width: 8.33%; }
+            .col-2 { width: 16.66%; }
+            .col-3 { width: 25%; }
+            .col-4 { width: 33.33%; }
+            .col-5 { width: 41.66%; }
+            .col-6 { width: 50%; }
+            .col-7 { width: 58.33%; }
+            .col-8 { width: 66.66%; }
+            .col-9 { width: 75%; }
+            .col-10 { width: 83.33%; }
+            .col-11 { width: 91.66%; }
+            .col-12 { width: 100%; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Zuriel M. Flores
+        </div>
+
+        <div class="row">
+            <div class="col col-4 col-s-6 frame">
+                <h3>Personal Information</h3>
+                <p><strong>Age:</strong> <i>15</i></p>
+                <p><strong>Gender:</strong> <i>Male</i></p>
+                <p><strong>Birth Date:</strong> <i>October 14, 2009</i></p>
+                <p><strong>Birth Place:</strong> <i>Manila Doctors Hospital</i></p>
+            </div>
+
+            <div class="col col-4 col-s-6 frame">
+                <h3>Contact Details</h3>
+                <p><strong>Mobile Number:</strong> <i>N/A</i></p>
+                <p><strong>Landline:</strong> <i>N/A</i></p>
+                <p><strong>Email:</strong> <i>zmflores@manresaschool.edu.ph</i></p>
+            </div>
+
+            <div class="col col-4 col-s-12 frame">
+                <h3>Educational Attainment</h3>
+                <p><strong>Junior High School:</strong> <i>Manresa School</i></p>
+                <p><strong>Grade School:</strong> <i>Manresa School</i></p>
+                <p><strong>Elementary School:</strong> <i>Manresa School</i></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
